@@ -15,9 +15,8 @@ print:
 
 
 sum:
-    mov rcx, rdi
-    mov rax, rsi
-    add rax, rcx
+    mov rax, rdi
+    add rax, rsi
     ret
 
     
