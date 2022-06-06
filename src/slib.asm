@@ -1,10 +1,6 @@
-global print
-global sum
-
-section .data
-
-section .text
-
+format ELF64
+public print 
+public sum
 print:
     mov rsi, rdi
     mov eax, 1
@@ -13,13 +9,7 @@ print:
     syscall
     ret
 
-
 sum:
     mov rax, rdi
     add rax, rsi
     ret
-
-    
-
-
-
